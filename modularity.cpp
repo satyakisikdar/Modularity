@@ -2,7 +2,7 @@
 // Refer to eq(1) of https://arxiv.org/pdf/0910.0165.pdf for the definition
 // Author: Satyaki Sikdar
 // Email: satyaki.sikdar@gmail.com
-// Date: March 18, 2017
+// Date: March 19, 2017
 
 #include<iostream>
 #include<vector>
