@@ -15,16 +15,24 @@ making hashing the edgelist unnecessary. The user needs to ensure the validity
 of the cover supplied, meaning that it should cover all the nodes of the graph.
 
 Sample usage:
+```
 g++ modularity.cpp -o mod -std=c++11 -O5 -Wall
 ./mod <edgelist> <cover>
+```
 
 Flags:
 1. Use -v to turn on verbose mode to see the time taken by the different phases
 of the program.
-Sample: ./mod <edgelist> <cover> -v
+Sample:
+```
+./mod <edgelist> <cover> -v
+```
 
 2. Use -a to feed in the cover in the alternate form which is described below.
-Sample: ./mod <edgelist> <alt_cover> -a
+Sample:
+```
+./mod <edgelist> <alt_cover> -a
+```
 WARNING: Using -a flag with normal covers will lead to wrong results.
 
 Specifications:
