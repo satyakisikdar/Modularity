@@ -30,22 +30,22 @@ Sample:
 ```
 ./mod <edgelist> <alt_cover> -a
 ```
-WARNING: Using -a flag with normal covers will lead to wrong results.
+*WARNING*: Using -a flag with normal covers will lead to wrong results.
 
 Specifications:
-1. Edge list:
+1. *Edge list*:
 Each line should have two numbers, ```u``` and ```v```, signifying an undirected
 edge between ```u``` and ```v```. The edges must NOT appear twice, that is, there
 must be ```|E|``` many lines in the edge list.
 
-2. Cover:
-- (a) Conventional form: There should be exactly ```|V|``` lines, and each node
+2. *Cover*:
+- (a) *Conventional form*: There should be exactly ```|V|``` lines, and each node
 should appear exactly once. Each line should have two numbers, ```u``` and ```comm_u```
 signifying the node label ```u``` and ```comm_u``` the corresponding community
 label of ```u```. Community labels are also not required to be in order.
 An example of this type of cover is at ```test_cover2``` for the network ```test_graph2```.
 
-- (b) Alternate form: For a cover with ```k``` communities, there must be exactly ```k```
+- (b) *Alternate form*: For a cover with ```k``` communities, there must be exactly ```k```
 lines, where each line represents a cluster, and has the labels of the members
 of the cluster. The line MUST end with ```-1```.
 An example of this type of cover is at ```test_cover2_a``` for the network ```test_graph2```.
