@@ -8,7 +8,7 @@ based' definition found at 'The performance of modularity maximization in
 practical contexts' at https://arxiv.org/pdf/0910.0165.pdf.
 
 The program is resilient enough to handle graphs with arbitrarily numbered nodes,
-making hashing the edge list unnecessary. The user needs to ensure the validity
+making renumbering the edge list unnecessary. The user needs to ensure the validity
 of the cover supplied, meaning that it should cover all the nodes of the graph.
 
 Sample usage:
@@ -39,13 +39,13 @@ edge between ```u``` and ```v```. The edges must NOT appear twice, that is, ther
 must be ```|E|``` many lines in the edge list.
 
 2. **Cover**:
-- (a) *Conventional form*: There should be exactly ```|V|``` lines, and each node
+- *Conventional form*: There should be exactly ```|V|``` lines, and each node
 should appear exactly once. Each line should have two numbers, ```u``` and ```comm_u```
 signifying the node label ```u``` and ```comm_u``` the corresponding community
 label of ```u```. Community labels are also not required to be in order.
 An example of this type of cover is at ```test_cover2``` for the network ```test_graph2```.
 
-- (b) *Alternate form*: For a cover with ```k``` communities, there must be exactly ```k```
+- *Alternate form*: For a cover with ```k``` communities, there must be exactly ```k```
 lines, where each line represents a cluster, and has the labels of the members
 of the cluster. The line MUST end with ```-1```.
 An example of this type of cover is at ```test_cover2_a``` for the network ```test_graph2```.
