@@ -51,4 +51,4 @@ of the cluster. The line MUST end with ```-1```.
 An example of this type of cover is at ```test_cover2_a``` for the network ```test_graph2```.
 
 
-Please contact satyaki.sikdar@gmail.com for any bug reports or suggestions.
+Please contact ssikdar@nd.edu for any bug reports or suggestions.
